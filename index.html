@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwanese (Taigi) Corner - Learn Taiwanese</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #5B8FC7 0%, #4A7BA7 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #5B8FC7 0%, #4A7BA7 100%);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #FFFFFF;
+            font-size: 3em;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            color: #FFFFFF;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            color: #FFFFFF;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #D4A574;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .section-content {
+            color: #FFFFFF;
+            font-size: 1.05em;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .section-content p {
+            margin-bottom: 10px;
+        }
+
+        .section-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .section-content li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #D4A574;
+            font-weight: bold;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, #D4A574 0%, #D4A574 50%, transparent 100%);
+            margin: 35px 0;
+        }
+
+        .highlight-box {
+            background: rgba(212, 165, 116, 0.15);
+            border-left: 4px solid #D4A574;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #FFFFFF;
+        }
+
+        .highlight-box strong {
+            color: #D4A574;
+        }
+
+        .contact-section {
+            background: rgba(212, 165, 116, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-section p {
+            color: #FFFFFF;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+        }
+
+        .email-link {
+            color: #D4A574;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .native-speakers {
+            background: rgba(212, 165, 116, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .native-speakers h3 {
+            color: #D4A574;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .native-speakers p {
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(212, 165, 116, 0.3);
+        }
+
+        .cost-highlight {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #D4A574;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .section-title {
+                font-size: 1.3em;
+            }
+
+            .section-content {
+                font-size: 0.95em;
+            }
+        }
+
+        /* Smooth animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TAIWANESE<br>(TAIGI) CORNER</h1>
+        <p class="subtitle">Taiwanese learning session for beginners</p>
+
+        <div class="section">
+            <div class="section-title">Cost</div>
+            <div class="section-content">
+                <p class="cost-highlight">FREE!</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">When</div>
+            <div class="section-content">
+                <p><strong>Every Tuesday, 12:00 PM – 1:00 PM</strong></p>
+                <p>September 8 – November 24, 2025</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Where</div>
+            <div class="section-content">
+                <p>IU Global and International Studies Building</p>
+                <p><strong>Room 1060</strong></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">What to Expect</div>
+            <div class="section-content">
+                <ul>
+                    <li>Learn Taiwanese pronunciation & everyday phrases</li>
+                    <li>Perfect for complete beginners</li>
+                    <li>Zero-pressure environment (no attendance required!)</li>
+                    <li>Light snacks provided</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Who Can Attend</div>
+            <div class="section-content">
+                <ul>
+                    <li>Anyone interested in learning Taiwanese</li>
+                    <li>Those curious about Taiwanese culture</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-section">
+            <p>Have questions?</p>
+            <p><a href="mailto:chengkai@iu.edu" class="email-link">chengkai@iu.edu</a></p>
+        </div>
+
+        <div class="native-speakers">
+            <h3>Are You a Native Speaker?</h3>
+            <p>Join our conversation practice session at the same time!</p>
+            <p>Scan the QR code on the flyer or contact us for more details.</p>
+        </div>
+
+        <div class="footer">
+            <p>Organized by: NTU Huayu BEST Program • East Asian Languages and Cultures</p>
+        </div>
+    </div>
+</body>
+</html>
